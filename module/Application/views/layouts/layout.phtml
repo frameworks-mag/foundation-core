@@ -1,0 +1,62 @@
+<?php echo $this->doctype() ?>
+<head>
+    <meta charset="utf-8">
+    <?php echo $this->headTitle() ?>
+
+    <?php echo $this->headMeta() ?>
+
+    <?php echo $this->headScript() ?>
+
+    <!-- Styles -->
+    <?php echo $this->headLink() ?>
+
+    <?php echo $this->placeholder('favicon') ?>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="fill">
+            <div class="container">
+                <a class="brand" href="<?php echo $this->url('home') ?>">ZF Modjewelz</a>
+                <ul class="nav">
+                    <li class="active">
+                        <a href="<?php echo $this->url('home') ?>">Home</a>
+                    </li>
+                    <li><a href="#anniversaries">IRC Digest</a></li>
+                    <li><a href="#reference"></a></li>
+                    <li><a href="#zfcuser">ZfcUser</a></li>
+                </ul>
+                <form action="/" class="pull-right">
+                    <input class="input-small" type="text" placeholder="Username">
+                    <input class="input-small" type="password" placeholder="Password">
+                    <button class="btn" type="submit">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="page-header">
+                <h1>Developing with Zend Framework 2</h1>
+                <h2 class="subhead">A guide to building modular projects</h2>
+            </div>
+
+            <div class="row">
+                <?php echo $this->raw('content'); ?>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                <span>ZF2 tutorial by Mike A.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span>
+                    ZfcUser module developed by <a href="http://blog.evan.pro/">
+                    Evan Coury</a>
+                </span>
+            </p>
+        </footer>
+    </div> <!-- /container -->
+
+</body>
+</html>

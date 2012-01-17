@@ -1,0 +1,144 @@
+======================
+ZF2 Tutorial -- Part 1
+======================
+
+    1.  Introduction
+    2.  Installation
+    3.  Virtual host setup
+    4.  Git Submodules
+    5.  Intellectual property rights
+    6.  Attributions
+    7.  Also see
+    
+
+1.  Introduction
+    ------------
+    Based upon Zend Framework 2.0 Beta 2, this tutorial comprises several parts,
+    building into a core application template with login and authorisation.
+
+    Part 1: Project core
+    This this part produces the most basic ZF2 application. Some pointers and
+    considerations are set out as a foundation upon which developers can build.
+
+    Part 2: Adding MmaIrc module
+    This part provides an example module, MmaIrc (which converts chat logs into
+    a digest). The process sets out how to plug into a project, something of DI,
+    the module config file, and Module.php.
+
+    Part 3: Adding a third module
+    Part 3 rehearses adding further modules.
+
+    Part 4: Adding ZfcUser module for login
+    Login authentication and security,courtesy of Evan Coury's exceptional
+    talents and his ZfcUser. This module takes the hard work out of this crucial
+    part of application development.
+
+    Part 5: Adding authorisation and ACL
+    Having logged in, the authorisation and ACL module defines who can access
+    what, where, and how. Includes ACL compliant bread-crumb navigation trails.
+
+    Part 6: Adding a module with database access
+    This part not only employs database access techniques in a simple
+    application, but in conjunction with ZfcUser, authorisation and ACL, how to
+    limit access for users without privileges.
+
+    Part 7: Pushing results to new View mechanisms
+    his part takes a look at how the new "View Model" operates and communicates
+    with Controllers.
+
+2.  Installation
+    ------------
+    Either download or clone from Github.
+
+    I *strongly recommend* cloning and becoming familiar with Github and the
+    various facets of using Git. It will become essential when communicating
+    with the Zend Framework 2.x community.
+    
+    The easiest way to get a working copy of this tutorial various parts is to
+    do a recursive clone. Of course, change file 'zf2-tutorial-[xxx]'
+    according to the part under review...
+
+        git clone --recursive git://github.com/mike-a/zf2-tutorial-pt1 .git
+        
+    See under 4, below, for more about the '--recursive' flag.
+
+3.  Virtual host setup
+    ------------------
+    After cloning, set up a virtual host to point to the public/ directory of
+    the project. My system uses /apache/conf/extra/httpd-vhosts.conf file...
+    
+        <VirtualHost *:80>
+            DocumentRoot "E:/xampp-1x7x7/htdocs/zf-tutorial-pt1/public"
+            ServerName zf2-pt1.localhost
+            <Directory "E:/xampp-1x7x7/htdocs/zf-tutorial-pt1/public">
+                DirectoryIndex index.php
+                AllowOverride All
+                Order allow,deny
+                Allow from all
+            </Directory>
+        </VirtualHost>
+
+    Of course, change path 'E:/xampp-1x7x7/htdocs/' to your own server path.
+    
+    As a Windows user I must also set up the PATH to match the line
+    'ServerName zf2-pt1.localhost'. On my system the directory and file are
+    E:\WINDOWS\system32\drivers\etc\hosts.
+    
+        127.0.0.1 zf2-pt1.localhost
+    
+    To see the project, ensure the local Apache server is running then in a
+    browser enter 'zf2-pt1.localhost'.
+
+4.  Git Submodules
+    --------------
+    This project makes use of [Git submodules]...
+    (http://book.git-scm.com/5_submodules.html).
+    Utilizing Git submodules allows us to reference an exact commit in the
+    upstream (https://github.com/mike-a/zf2-tutorial-pt1) repository and
+    ensure that those who have cloned the project have that same commit
+    checked out.
+    
+5.  Intellectual property rights
+    ----------------------------
+    This tutorial was produced for anyone to use, learn with and employ as a
+    foundation for other works. Copy it, reproduce it, do what you like with it.
+    That includes authors who may wish to copy or reuse all or part of the
+    *TUTORIAL FILES*.
+
+    Although library and module files are included with the project for ease
+    of getting started, users *MUST* comply with the following...
+    
+        *   Zend Framework, Doctrine and other libraries, including Javascript
+            and CSS libraries, are issued with their own licences. Those
+            licences must be complied with and adhered to according to law.
+        *   Modules developed by others and used here are issued under licence.
+            Licences must be complied with and adhered to according to law.
+        *   Acknowledgements and attributions should always be included when
+            using works of other developers if to avoid the infamous
+            'copier curse' (a curse afflicting copright infringers, their
+            families and close friends -- a curse involving ailment and
+            itches, often exposed by developers who constantly scratch private
+            parts in public places).
+            
+    Also keep in mind that development of libraries, frameworks and modules
+    constantly cause change. Users should update to keep pace with code and
+    licencing changes.
+
+
+6.  Attributions
+    -------------
+    Zend        http://framework.zend.com/
+    ZF 2.x      https://github.com/zendframework/zf2
+    Doctrine    http://www.doctrine-project.org/
+    ZfcUser     https://github.com/ZF-Commons by Evan Coury
+    Twitter     http://twitter.github.com/bootstrap/
+        
+7.  Also see...
+    -----------
+    http://akrabat.com/getting-started-with-zend-framework-2/
+    http://blog.astrumfutura.com/2011/10/zend-framework-2-0-dependency-injection
+    -part-1/
+    http://zend-framework-community.634137.n4.nabble.com/
+    http://zf-commons.github.com/
+    #zftalk.2 -- irc://irc.freenode.org:6665/zftalk.2
+    
