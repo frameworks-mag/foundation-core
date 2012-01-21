@@ -9,9 +9,5 @@ class IndexController extends ActionController
     public function indexAction()
     {
     }
-    public function testAction()
-    {
-    }
-
     
 }
