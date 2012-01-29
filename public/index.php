@@ -1,6 +1,6 @@
 <?php
 /**
- * Set path to Zend Framework and start.
+ * Set path to Zend Framework project and start.
  */
 chdir(dirname(__DIR__));
 require_once (getenv('ZF2_PATH') ?: 'vendor/ZendFramework/library') 
@@ -22,11 +22,12 @@ $listenerOptions  =
             $appConfig['module_listener_options']
             );
 $defaultListeners = 
-    new Zend\Module\Listener\DefaultListenerAggregate($listenerOptions);
+    new Zend\Module\Listener\DefaultListenerAggregate(
+            $listenerOptions
+            );
 $defaultListeners
     ->getConfigListener()
     ->addConfigGlobPath('config/autoload/*.config.php');
-
 /**
  * Load up the Module Manager and use it to set up project modules.
  */
@@ -44,6 +45,7 @@ $bootstrap   =
             ->getConfigListener()
             ->getMergedConfig()
             );
+
 $application = new Zend\Mvc\Application;
 $bootstrap->bootstrap($application);
 $application->run()->send();
