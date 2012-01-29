@@ -168,7 +168,7 @@ class Listener implements ListenerAggregate
     public function renderError(MvcEvent $e)
     {
         $error    = $e->getError();
-        $app      = $e->getTarget();
+//        $app      = $e->getTarget();
         $response = $e->getResponse();
         if (!$response) {
             $response = new Response();

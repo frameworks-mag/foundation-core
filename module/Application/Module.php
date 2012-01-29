@@ -78,7 +78,8 @@ class Module implements AutoloaderProvider
         $view->plugin('headTitle')->setSeparator(' - ')
                                   ->setAutoEscape(false)
                                   ->append(
-                                            'Zend Framework 2.0 -- Building modular projects, by Mike A'
+                                            'Zend Framework 2.0 -- Building 
+                                                modular projects, by Mike A'
                                             );
         $view->plugin('headLink')->appendStylesheet('/css/bootstrap.min.css');
         $view->plugin('headLink')->appendStylesheet('/css/pagestyle.css');
