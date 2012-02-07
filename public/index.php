@@ -34,6 +34,12 @@ $defaultListeners
 $moduleManager = 
     new Zend\Module\Manager($appConfig['modules']);
 $moduleManager->events()->attachAggregate($defaultListeners);
+/*
+echo "<pre>";
+print_r($moduleManager);
+echo "</pre>";
+ * 
+ */
 $moduleManager->loadModules();
 
 /**
