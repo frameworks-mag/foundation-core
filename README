@@ -101,9 +101,11 @@ ZF2 Tutorial -- Part 1
 5.  Intellectual property rights
     ----------------------------
     This tutorial was produced for anyone to use, learn with and employ as a
-    foundation for other works. Copy it, reproduce it, do what you like with it.
-    That includes authors who may wish to copy or reuse all or part of the
-    *TUTORIAL FILES*.
+    foundation for other works. When out of draft (and certainly not before), 
+    readers may reproduce this work, represent it within other written works and
+    copy or reuse all or part of it: if they also abide by the strict condition
+    that prominent acknowledgement of the title and author of this work shall
+    appear within each page containing any part of this work.
 
     Although library and module files are included with the project for ease
     of getting started, users *MUST* comply with the following...
@@ -111,18 +113,15 @@ ZF2 Tutorial -- Part 1
         *   Zend Framework, Doctrine and other libraries, including Javascript
             and CSS libraries, are issued with their own licences. Those
             licences must be complied with and adhered to according to law.
-        *   Modules developed by others and used here are issued under licence.
-            Licences must be complied with and adhered to according to law.
+            Modules developed by others and used here are issued under licence.
+            Their intellectual rights conditions should be complied with too,
+            ethically and according to law.
         *   Acknowledgements and attributions should always be included when
-            using works of other developers if to avoid the infamous
-            'copier curse' (a curse afflicting copright infringers, their
-            families and close friends -- a curse involving ailment and
-            itches, often exposed by developers who constantly scratch private
-            parts in public places).
+            using works of other developers.
             
     Also keep in mind that development of libraries, frameworks and modules
     constantly cause change. Users should update to keep pace with code and
-    licencing changes.
+    licensing changes.
 
 
 6.  Attributions
