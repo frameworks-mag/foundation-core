@@ -64,30 +64,7 @@ ZF2 Tutorial -- Part 1
 
 3.  Virtual host setup
     ------------------
-    After cloning, set up a virtual host to point to the public/ directory of
-    the project. My system uses /apache/conf/extra/httpd-vhosts.conf file...
-    
-        <VirtualHost *:80>
-            DocumentRoot "E:/xampp-1x7x7/htdocs/zf-tutorial-pt1/public"
-            ServerName zf2-pt1.localhost
-            <Directory "E:/xampp-1x7x7/htdocs/zf-tutorial-pt1/public">
-                DirectoryIndex index.php
-                AllowOverride All
-                Order allow,deny
-                Allow from all
-            </Directory>
-        </VirtualHost>
-
-    Of course, change path 'E:/xampp-1x7x7/htdocs/' to your own server path.
-    
-    As a Windows user I must also set up the PATH to match the line
-    'ServerName zf2-pt1.localhost'. On my system the directory and file are
-    E:\WINDOWS\system32\drivers\etc\hosts.
-    
-        127.0.0.1 zf2-pt1.localhost
-    
-    To see the project, ensure the local Apache server is running then in a
-    browser enter 'zf2-pt1.localhost'.
+    See the guide provided under /Guide folder.
 
 4.  Git Submodules
     --------------
