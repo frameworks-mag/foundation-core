@@ -68,12 +68,10 @@ ZF2 Tutorial -- Part 1
 
 4.  Git Submodules
     --------------
-    This project makes use of [Git submodules]...
-    (http://book.git-scm.com/5_submodules.html).
-    Utilizing Git submodules allows us to reference an exact commit in the
+    This project makes use of http://book.git-scm.com/5_submodules.html.
+    Utilising Git submodules allows us to reference an exact commit in the
     upstream (https://github.com/mike-a/zf2-tutorial-pt1) repository and
-    ensure that those who have cloned the project have that same commit
-    checked out.
+    ensure peer developers using the project have that same version checked out.
     
 5.  Intellectual property rights
     ----------------------------
