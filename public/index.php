@@ -55,3 +55,6 @@ $bootstrap   =
 $application = new Zend\Mvc\Application;
 $bootstrap->bootstrap($application);
 $application->run()->send();
+echo "<pre>";
+print_r($application->getLocator());
+echo "</pre>";
